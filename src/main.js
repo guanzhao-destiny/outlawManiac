@@ -8,10 +8,12 @@ import '@/utils/global'//全局
 import './promission'//这里进行路由后台获取的模拟
 import 'element-ui/lib/theme-chalk/index.css';
 import '@/styles/index.scss' // global css
+import axios from 'axios'
 
 
 Vue.config.productionTip = false
 Vue.use(ElementUI)
+axios.defaults.baseURL = '/admin'
 
 
 /* eslint-disable no-new */
